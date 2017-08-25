@@ -57,7 +57,7 @@ public class EmployeeResource {
     @Timed
     @Path("{id}")
     public Response deleteEmployee(@PathParam("id") final int id) {
-        Map<String, String> response = new HashMap<String, String>();
+        Map<String, String> response = new HashMap<>();
         response.put("status", employeeService.deleteEmployee(id));
         return Response.ok(response).build();
     }
