@@ -1,0 +1,30 @@
+logging:
+  level: INFO
+  
+  appenders:
+    - type: console
+      threshold: ALL
+      timeZone: IST
+      
+server:
+  type: simple
+  applicationContextPath: /
+  adminContextPath: /admin
+  connector:
+      port: 4000
+      type: http
+
+database:
+  driverClass: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/softwaredevelopercentral?autoReconnect=true&useSSL=false
+  user: root
+  password:
+  maxWaitForConnection: 1s
+  validationQuery: "SELECT 1"
+  validationQueryTimeout: 3s
+  minSize: 8
+  maxSize: 32
+  checkConnectionWhileIdle: false
+  evictionInterval: 10s
+  minIdleTime: 1 minute
+  checkConnectionOnBorrow: true
