@@ -47,8 +47,8 @@ public class EmployeeResource {
     @PUT
     @Timed
     @Path("{id}")
-    public Response editPart(@NotNull @Valid final Employee employee,
-                             @PathParam("id") final int id) {
+    public Response editEmployee(@NotNull @Valid final Employee employee,
+                                 @PathParam("id") final int id) {
         employee.setId(id);
         return Response.ok(employeeService.editEmployee(employee)).build();
     }
@@ -56,7 +56,7 @@ public class EmployeeResource {
     @DELETE
     @Timed
     @Path("{id}")
-    public Response deletePart(@PathParam("id") final int id) {
+    public Response deleteEmployee(@PathParam("id") final int id) {
         Map<String, String> response = new HashMap<String, String>();
         response.put("status", employeeService.deleteEmployee(id));
         return Response.ok(response).build();
