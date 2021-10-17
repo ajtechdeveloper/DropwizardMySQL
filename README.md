@@ -1,6 +1,6 @@
 # Dropwizard MySQL Database Integration
 
-[![Build Status](https://app.travis-ci.com/ajtechdeveloper/DropwizardMySQL.svg?branch=master)](https://app.travis-ci.com/ajtechdeveloper/DropwizardMySQL)
+[![build](https://github.com/ajtechdeveloper/DropwizardMySQL/actions/workflows/build.yml/badge.svg)](https://github.com/ajtechdeveloper/DropwizardMySQL/actions/workflows/build.yml)
 
 Dropwizard and MySQL Database Integration
 
